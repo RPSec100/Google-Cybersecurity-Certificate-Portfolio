@@ -1,5 +1,8 @@
 File permissions in Linux
-Project description
+## Objective
+The objective was to check the permissions of every file and directory and changing their permissions using Linux commands.
+
+## Content
 In this project I practiced using linux commands to manage and analyze files and directory permissions. I learned how to access and view files and directory details, identify hidden files, and interpret linux permission strings. This project helped me understand how linux commands and controls were able access to files and directories and why permissions are crucial to system security. 
 Check file and directory details
 Using the linux command ls -l, I was able to view the files and directories and examined the permissions and ownerships of the files. In order for me to view the file permissions and ownerships of the hidden files, I had to use the command ls -la which shows the hidden files and their permissions. 
