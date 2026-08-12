@@ -7,12 +7,12 @@ In this project I practiced using linux commands to manage and analyze files and
 Check file and directory details
 Using the linux command ls -l, I was able to view the files and directories and examined the permissions and ownerships of the files. In order for me to view the file permissions and ownerships of the hidden files, I had to use the command ls -la which shows the hidden files and their permissions. 
 
-##
+## Tools Used
+- Qwiklab
 
-
-## Skills demonstrated
-Linux skills
-Analytical skills
+## Skills Demonstrated
+- Linux skills
+- Files and directories analysis
 
 Describe the permissions string
 I learned how to interpret the linux permission strings, which shows the permissions of three different types of groups: the user/owner, groups, and other users.  After using the command earlier ls -la which showed me the permission of every file in the “projects” directory, it showed me the permission strings of every file. For example “project_k.txt”, showed the permission string of -rw-rw-rw-. The first set of strings: -rw-, shows the permissions of the owner, implying that the owner can read and modify the file. The second string rw- is the group permissions and the third string rw- is the other user permissions.
