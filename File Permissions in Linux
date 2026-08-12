@@ -1,0 +1,20 @@
+File permissions in Linux
+Project description
+In this project I practiced using linux commands to manage and analyze files and directory permissions. I learned how to access and view files and directory details, identify hidden files, and interpret linux permission strings. This project helped me understand how linux commands and controls were able access to files and directories and why permissions are crucial to system security. 
+Check file and directory details
+Using the linux command ls -l, I was able to view the files and directories and examined the permissions and ownerships of the files. In order for me to view the file permissions and ownerships of the hidden files, I had to use the command ls -la which shows the hidden files and their permissions. 
+
+Describe the permissions string
+I learned how to interpret the linux permission strings, which shows the permissions of three different types of groups: the user/owner, groups, and other users.  After using the command earlier ls -la which showed me the permission of every file in the “projects” directory, it showed me the permission strings of every file. For example “project_k.txt”, showed the permission string of -rw-rw-rw-. The first set of strings: -rw-, shows the permissions of the owner, implying that the owner can read and modify the file. The second string rw- is the group permissions and the third string rw- is the other user permissions.
+Change file permissions
+After checking the permissions for file “project_k.txt”, I now know that the owner, group, and other users have the permissions to read and modify the file. But we actually don’t want the “other users” to have writing permissions. Using the linux command “chmod o-w project_k.txt”, o standing for other, - standing for remove permission, w standing for writing permission. After sending the command, I used the command ls -la to check again and see if the permission of others is now only reading permissions. 
+The result should look like this:
+
+Change file permissions on a hidden file
+After applying the linux commands to project_k.txt, I also had to change the permissions of the hidden file “.project_x.txt”. Within this file, no one is supposed to have permissions for writing or executing, and only have permission to read this file. I see that in this hidden file, the owner has permission to read and modify, while the group has permission to modify the file as well but doesn’t have reading permissions. I used the linux command “chmod u-w, g=r .project.txt” so that the owner and the group only have reading permissions. The result should look like this after checking permissions to the files again using ls -la.
+
+Change directory permissions
+The next task for this project was to change the directory “drafts” permissions of the group. After using the linux command to check the permissions of the directory “drafts” I see that the group has the execute permission meaning they have access to the content. Using the linux command “chmod g-x drafts” I removed the group permission to execute or have access to the contents of this directory. After checking the permissions again, this is what the permission string now looks like for drafts.
+
+Summary
+In summary, this project helped me get hands-on experience on learning and using linux commands on files and directories. I was able to inspect and analyze the contents of the files and permissions of the files and directories, be able to analyze contents of hidden files, and modify permissions using the linux commands. These skills taught by this project are important for learning and what it takes to be in the cybersecurity field because it helps prevent unauthorized users from having access to specific files.
