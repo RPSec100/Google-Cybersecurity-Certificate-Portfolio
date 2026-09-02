@@ -5,7 +5,8 @@ The objective is to use SQL queries to find and analyze data tables of employees
 # Context
 In this project, I practiced using SQL queries and filters to find and analyze tables from specific data. I learned how to find employees in different departments and login attempts on specific dates, locations and time. This project helped me understand how these SQL queries and commands were able to find tables from data pools and also how important it is to search and filter through logs.
 
-
+# Tools Used
+- Qwiklab
 
 # Skills Demonstrated
 - SQL queries
