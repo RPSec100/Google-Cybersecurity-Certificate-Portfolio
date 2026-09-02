@@ -1,0 +1,11 @@
+## Apply filters to SQL queries
+
+# Project description
+In this project, I practiced using SQL queries and filters to find and analyze tables from specific data. I learned how to find employees in different departments and login attempts on specific dates, locations and time. This project helped me understand how these SQL queries and commands were able to find tables from data pools and also how important it is to search and filter through logs.
+
+#Retrieve after hours failed login attempts
+In this section, my task was to use SQL queries and commands to search through and find all the failed login attempts that were made after work hours, which was 18:00 or 6:00pm. The command I used was: 
+SELECT * 
+FROM log_in_attempts 
+WHERE login_time > ‘18:00:00’  AND SUCCESS = ‘0’;
+This command shows all the information related to the failed login attempts and what time it took place after work hours. 
