@@ -1,6 +1,6 @@
 # Incident Handler Journal
 ## Objective
-Document incidents and hands-on activities through linux.
+Documenting incidents and hands-on activities through linux.
 
 ## Skills demonstrated
 - Phishing analysis
@@ -8,4 +8,26 @@ Document incidents and hands-on activities through linux.
 - TCP log analysis
 - Risk analysis and management
 
-## 
+## Journal Entry - Ransomeware Incident
+The incident that I documented was health care clinic that was attacked with ransomeware that encrypted all the files where an organized group of unethical hackers demanded money in exchange for the encryption key.
+
+## Findings
+The attack occured on Tuesday at 9:00 a.m at a small US health care clinic. The reason why the incident occured was due to a phishing email being opened containing malicious attachments like ransomeware. This lead to the unethical hackers encrypting the files and demanding money.
+
+## Additional notes
+I asked myself these questions. What information and files do the unethical attackers have a hold of? How critical is this incident and what are the risks? How can we mitigate the incident before further damage occurs?
+
+## Journal Entry - TCP packet analysis
+In this activity, I was tasked to use linux commands to find TCP/IP logs so that I can analyze and understand the information the log was giving.
+
+## Findings
+The log that was found in the terminal appeared to be a TCP three-way handshake between IP: 172.17.0.2 and 146.75.38.132. The main IP 172.17.0.2 appeared to be making a request with the destination IP 146.75.38.132. The server then acknowledges the requestion from 172.17.0.2 and was ready to make the connection.
+
+## Journal Entry - Ticket Alert
+This journal entry documents the phishing email of a user claiming to be interested with the engineering role and sending over a file that needs password for access. The goal was to document and determine the risk behind this email.
+
+## Findings
+The email was sent and recieved at 9:30 a.m on July 20th 2022. The email had multiple spelling and grammar mistakes while also having a malicious or suspicious file attached to the email, and also needed a password in order to access the attached file which further increased the level of suspicion of this email. I then escalated the alert ticket so that this phishing email went into further investigation.
+
+## Additional Questions
+The email contains a link and a download file, what does it contain? What would happen if someone clicked on it? How catastrophic would this phishing email be had someone clicked on it?
