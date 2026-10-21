@@ -20,7 +20,7 @@ Several customers reported that they were not able to access the company website
 The given UDP protocol logs revealed that port 53 is unreachable when attempting to access the website. The incident was suspected of being a DDoS attack.
 
 ## What I learned
-This project helped me understand and learn how to perform:
+This project helped me understand and learn about:
 - traffic log analysis
 - Packet analysis
 - Port 53
