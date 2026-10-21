@@ -5,6 +5,14 @@ The goal is to use python to update and display of the ip address that are allow
 ## Context
 This project was made to understand how to use python to update files and algorithms. I learned how to use the def() function to organize my lists and codes into one function, how to use a ‘for’ loop and conditions to make changes or adjustments to a file, and how to use open() to store a function with “r” or “w” as a file. This project helped me understand how to store information and organize data with python. (Note that the project I am documenting over was a lab from the previous assignment that also provided me with instructions).
 
+## Tools Used
+- Google Docs
+- Coursera Python Lab
+
+## Skills Demonstrated
+- Python: using it to print, modify lists, create loops and conditions, and assign variables
+- Code Documentation: documenting my coding process and explaining the purpose of what the code does and what syntax and methods I applied
+
 ## Open the file that contains the allow list
 The first task was to open the ‘import_file’ as a read only and store it as a file. Using the code function ‘with open(import_file, “r”) as file:’  and also assign the ‘file.read()’ as ip_addresses so that I can store the file into the variable and then display the list of ip_addresses with print(ip_addresses).
 
