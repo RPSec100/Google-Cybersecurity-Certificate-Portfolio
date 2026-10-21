@@ -6,8 +6,6 @@ Analyze DNS and ICMP traffic logs to determine the cause of a network traffic is
 This documentation was completed as part of the Google Cybersecurity Professional Certificate program and was provided with tcmpdump traffic logs for analysis.
 
 ## Skills Demonstrated 
-- DNS analysis
-- ICMP analysis
 - Incident investigation
 - Documentation
 
