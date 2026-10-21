@@ -3,14 +3,13 @@
 ## Objective
 The goal is to use python to update and display of the ip address that are allowed on the list.
 
-# Context
+## Context
 This project was made to understand how to use python to update files and algorithms. I learned how to use the def() function to organize my lists and codes into one function, how to use a ‘for’ loop and conditions to make changes or adjustments to a file, and how to use open() to store a function with “r” or “w” as a file. This project helped me understand how to store information and organize data with python. (Note that the project I am documenting over was a lab from the previous assignment that also provided me with instructions).
 
-# Open the file that contains the allow list
+## Open the file that contains the allow list
 The first task was to open the ‘import_file’ as a read only and store it as a file. Using the code function ‘with open(import_file, “r”) as file:’  and also assign the ‘file.read()’ as ip_addresses so that I can store the file into the variable and then display the list of ip_addresses with print(ip_addresses).
 
 Input:
-
 import_file = "allow_list.txt"
 
 remove_list = ["192.168.97.225", "192.168.158.170", "192.168.201.40", "192.168.58.57"]
@@ -20,11 +19,10 @@ with open(import_file, "r") as file:
 
 print(ip_addresses)
 
-# Read the file contents
+## Read the file contents
 After using the print(ip_addresses) function to display the ip addresses, the output of the function shows a list of ip addresses. However, the problem with this code is that the list also displays the list of ip addresses that are within the “remove_list” variable where the intended purpose of this code was to display only the ip addresses within the “import_file” and not “remove_list” ip addresses.
 
 Output:
-
 ip_address
 192.168.25.60
 192.168.205.12
@@ -46,11 +44,10 @@ ip_address
 
 As you can see here, the function displays all the ip addresses and even the remove_list which consists of the ip addresses: 192.168.97.225, 192.168.158.170, 192.168.201.40, and 192.168.58.57 and that is not what we want on the list.
 
-# Convert the string into a list
+## Convert the string into a list
 Using the ‘.split()’ function to make the string ‘ip_addresses’ into a list so that the list that we will print out later, will provide us a list of ip addresses that are specifically in the allowed_list section and instead doesn’t display all the ip addresses being merged together. Though the list still displays the ip addresses within the remove_list section.
 
 Input: 
-
 import_file = "allow_list.txt"
 
 remove_list = ["192.168.97.225", "192.168.158.170", "192.168.201.40", "192.168.58.57"]
@@ -65,16 +62,14 @@ print(ip_addresses)
 After converting the string into a list, I then used the print() function to display the ip addresses from the allow list specifically.
 
 Output:
-
 ['ip_address','192.168.25.60','192.168.205.12','192.168.97.225','192.168.6.9','192.168.52.90','192.168.158.170', '192.168.90.124',
 '192.168.186.176','192.168.133.188','192.168.203.198','192.168.201.40','192.168.218.219','192.168.52.37','192.168.156.224','192.168.60.153',
 '192.168.58.57','192.168.69.116']
 
-# Iterate through the remove list
+## Iterate through the remove list
 Here is where I use an iterative and conditional statement so that the ip_addresses removes any ip addresses that contain or are in the remove_list. When using a ‘for i’ or in this example ‘for element’ statement, I use this to check for values within the list, which is the ip_addresses variable. The conditional statement I use is ‘if element in remove_list’ which is where the function looks through and sees if the ‘element’ that the function is searching for is also within the remove_list. Once the function searching through the ip_addresses finds that the ‘element’ is also in the remove_list, I use the function ‘ip_addresses.remove(element)’ to remove any ip addresses that are in the remove_list section. 
 
 Input: 
-
 import_file = "allow_list.txt"
 
 remove_list = ["192.168.97.225", "192.168.158.170", "192.168.201.40", "192.168.58.57"]
@@ -90,11 +85,10 @@ for element in ip_addresses:
 
 print(ip_addresses)
 
-# Remove IP addresses that are on the remove list
+## Remove IP addresses that are on the remove list
 Based on the list above, where the code provides an interactive and specifically a conditional statement that removes the ip addresses within the remove list, this allows the print(ip_addresses) to display a list of ip_addresses that are specifically within the allow list and will not display any ip addresses in the remove_list section. 
 
 Output:
-
 ['ip_address','192.168.25.60','192.168.205.12','192.168.6.9','192.168.52.90','192.168.90.124','192.168.186.176','192.168.133.188','192.168.203.198',
 '192.168.218.219','192.168.52.37','192.168.156.224','192.168.60.153','192.168.69.116']
 
@@ -104,7 +98,6 @@ You can see here that the ip addresses that are in the remove_list: 192.168.97.2
 After the ip addresses that are in the remove_list were removed, I converted the ip_addresses list back into a string using “ip_addresses = “ ”.join(ip_addresses) and then update the file with another ‘with open(imported_file, “w”) as file:’ so that I can open the file and be able write on it.
 
 Input:
-
 import_file = "allow_list.txt"
 
 remove_list = ["192.168.97.225", "192.168.158.170", "192.168.201.40", "192.168.58.57"]
@@ -123,5 +116,5 @@ ip_addresses = " ".join(ip_addresses)
 with open(import_file, "w") as file:
     file.write(ip_addresses)
 
-# Summary
+## Summary
 This project was to document what I learned and also be able to explain what the code does, break it down, and also improve my hands-on skills on python. I learned how to use python to edit and make changes to a list by: updating the file, using iterative and conditional statements, and using the “with open()” function to convert a string into a list. 
