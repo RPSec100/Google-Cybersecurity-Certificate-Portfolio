@@ -58,7 +58,6 @@ with open(import_file, "r") as file:
 ip_addresses = ip_addresses.split()
 print(ip_addresses)
 
-
 After converting the string into a list, I then used the print() function to display the ip addresses from the allow list specifically.
 
 Output:
