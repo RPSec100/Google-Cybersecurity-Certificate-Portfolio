@@ -32,6 +32,5 @@ The given UDP protocol logs revealed that port 53 is unreachable when attempting
 ## What I learned
 This project helped me understand and learn about:
 - traffic log analysis
-- Packet analysis
-- Port 53
+- DDoS attacks
 - Incident documentation
