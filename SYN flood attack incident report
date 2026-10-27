@@ -50,7 +50,7 @@ No.   Time       Source          Destination     Protocol  Info
 73    6.230548   192.0.2.1       198.51.100.16   TCP       443->32641 [RST, ACK] Seq=0 Win-5792 Len=120...
 74    6.330539   203.0.113.0     192.0.2.1       TCP       54770->443 [SYN] Seq=0 Win=5792 Len=0...
 
-The logs here show that there has been multiple SYN requests from the source and destination IP of 192.0.2.1.
+The logs here show that there has been multiple SYN requests from the source and destination IP: 203.0.113.0 and 192.0.2.1.
 
 ## Findings
 The log data was experiencing a SYN flood attack. The logs showed an extremely large number of SYN requests by a malicious attacker, causing the web server to be completely overwhelmed and preventing legitimate users from connecting and accessing the website.
