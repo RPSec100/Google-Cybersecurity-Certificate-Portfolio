@@ -14,7 +14,6 @@ This documentation was completed with the provided incident and Network logs fro
 ## Tools used
 - Google Doc
 - Google Sheets providing Wireshark TCP/HTTP logs
-- Google Cybersecurity Professional Certificate program
 
 ## Scenario 
 The company website has experienced a repeated timeout error message. With the TCP/HTTP logs provided, I am tasked to analyze the logs and identify the root cause of the outage.
