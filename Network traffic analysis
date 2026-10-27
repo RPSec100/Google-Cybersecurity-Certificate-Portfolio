@@ -12,7 +12,6 @@ This documentation was completed as part of the Google Cybersecurity Professiona
 
 ## Tools Used
 - Google Docs
-- Google Cybersecurity Professional Certificate
 
 ## Scenario
 Several customers reported that they were not able to access the company website. I am tasked to analyze the given DNS and ICMP traffic logs to identify the cause of the website outage.
